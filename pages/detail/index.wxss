@@ -1,0 +1,88 @@
+@import "./common.wxss";
+
+.detail-first {
+  background-color: #fff;
+  align-items: center;
+  margin-top: 12rpx;
+}
+
+.detail-box {
+  display: flex;
+  align-items: center;
+}
+
+.detail-hr {
+  height: 1px;
+  width: 95%;
+  margin-left: 20rpx;
+  background: #0cf;
+  overflow: hidden;
+}
+
+.detail-one {
+  margin-left: 25rpx;
+  width: 420rpx;
+}
+
+.detail-image {
+  height: 120rpx;
+  width: 300rpx;
+}
+
+.detail-title {
+  font-size: 34rpx;
+}
+
+.detail-desc {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  width: 650rpx;
+  color: #888;
+}
+
+.detail-ensure-title {
+  width: 700rpx;
+}
+
+.detail-enure-price {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  width: 650rpx;
+  color: red;
+}
+
+.detail-sale {
+  margin: 12rpx 0px;
+  width: 60px;
+  height: 18px;
+  border-radius: 3rpx;
+  border: 2px solid #0cf;
+}
+
+.detail-expecial {
+  display: flex;
+  margin: 0rpx 20rpx;
+}
+
+.detail-middle {
+  margin: 20rpx 20rpx;
+  font-size: 36rpx;
+  color: #0cf;
+  display: flex;
+}
+
+.detail-middle-first {
+  width: 5px;
+  height: 26px;
+  border: 2px solid #0cf;
+  background-color: #0cf;
+}
+
+.detail-buy {
+  margin-top: 80rpx;
+  position: fixed;
+  bottom: 0;
+}
+.detail-btn {
+  width: 375rpx;
+}

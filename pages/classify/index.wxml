@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}">
+      <view class="nav_left_items {{curNav == item.key ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.key}}">{{item.value}}</view>
+    </block>
+  </view>
+  <view class="nav_right">
+    <view>
+      <block wx:for="{{products}}">
+        <navigator url="../detail/index?_id={{item._id}}">
+          <view class="flex-wrp pro-box" style="flex-direction:row;">
+            <view class="pro-item">
+              <image class="center-block" src="http://oss2.99bx.cn/spa/ruihengweb/prodImg/n{{item.productCode}}.png"></image>
+            </view>
+            <view class="pro-item">
+              <view class="pro-high">
+                <view class="icon-box-title">{{item.productName}}</view>
+                <view class="icon-box-desc">{{item.productDetail.specific}}</view>
+                <view class="pro-price">¥{{item.productDetail.premium}}元</view>
+              </view>
+              <view>
+                <button type="primary">购买</button>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>

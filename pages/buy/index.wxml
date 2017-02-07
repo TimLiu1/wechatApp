@@ -1,0 +1,81 @@
+
+<!--pages/buy/index.wxml-->
+<view class="detail-middle">
+  <view class="page-section" class="detail-middle-first"></view>
+  保险计划
+</view>
+<view class="page-section">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" auto-focus placeholder="投保人姓名" />
+    </view>
+  </view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">证件类型</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{paperType}}">
+        <view class="weui-input">{{plans[index]}}</view>
+      </picker>
+    </view>
+  </view>
+</view>
+<view class="page-section">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" auto-focus placeholder="证件号码" />
+    </view>
+  </view>
+</view>
+<view class="page-section">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">起保日期</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{start}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="page-section">
+  <view class="weui-cells weui-cells_after-title">
+     <view class="weui-cell weui-cell_input" style="padding:13rpx 0px;">
+     <label>性别</label>
+    <radio-group style="margin-left:15rpx;" class="group" bindchange="radioChange">
+          <radio id="12" style="margin-left:15rpx;" value="男" checked="true"><text>男</text></radio>
+           <radio id="12" style="margin-left:15rpx;" value="女" checked="true"><text> 女</text></radio>
+          
+      </radio-group>
+    </view>
+  </view>
+</view>
+
+<view class="detail-middle">
+  <view class="page-section" class="detail-middle-first"></view>
+  被保人
+</view>
+
+<view class="page-section">
+  <view class="weui-cells weui-cells_after-title">
+     <view class="weui-cell weui-cell_input" style="padding:18rpx 0px;">
+     <label>受益人类型</label>
+    <label style="margin:0 12rpx;" class="checkbox">
+      <checkbox value="cb"  checked="true"  /> 同投保人
+    </label>
+  
+    </view>
+  </view>
+</view>
+
+
+ <view class="detail-buy">
+   <button type="primary" bindtap="submitOrder" class="detail-btn">购买</button>
+  </view>

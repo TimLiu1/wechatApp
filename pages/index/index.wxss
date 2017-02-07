@@ -1,0 +1,62 @@
+.pro-box {
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.pro-item {
+  width: 375rpx;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 370rpx;
+  height: 335rpx;
+  margin: 20rpx 0rpx 20rpx 0rpx;
+}
+
+.pro-price {
+  margin-top: 20rpx;
+  color: red;
+  font-size: 30rpx
+}
+.pro-high {
+  height:250rpx;
+}
+
+
+
+.pro-buy {
+  margin-top: 50rpx;
+  color: red;
+  font-size: 30rpx
+}
+.icon-box-img {
+  margin-right: 46rpx;
+}
+
+.icon-box-ctn {
+  flex-shrink: 100;
+}
+
+.icon-box-title {
+  font-size: 34rpx;
+}
+
+.icon-box-desc {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+
+.icon-small-wrp {
+  margin-right: 46rpx;
+  width: 93px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

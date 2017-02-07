@@ -1,0 +1,103 @@
+
+<!--pages/detail/index.wxml-->
+<view class="page-body">
+  <view class="page-section" class="detail-first">
+    <view class="detail-box">
+      <view class="detail-one">
+        <view class="detail-title">{{product.productAbbr}}</view>
+        <view class="detail-desc">限购份数:{{product.productDetail.limitCopies}}</view>
+      </view>
+      <view class="detail-image">
+        <image class="detail-image" src="{{product.providerId.logoUrl}}"></image>
+      </view>
+    </view>
+    <view class="detail-hr"></view>
+    <view class="detail-expecial" style="flex-direction:row;">
+      <view class="detail-desc">
+        产品特色：{{productDetail.prodSpecifics[0].content}}
+      </view>
+      <view class="detail-sale detail-desc">销量:
+        <text>{{product.realSalesVolume+product.productDetail.salesVolume}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="detail-middle">
+    <view class="page-section" class="detail-middle-first"></view>
+    保险计划
+  </view>
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">起保日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="weui-input">{{start}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">出生日期</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{birthday}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">保险期限</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="weui-input">{{array[index]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">保障计划</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="weui-input">{{plans[index]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="detail-middle">
+    <view class="page-section" class="detail-middle-first"></view>
+    保障项目
+  </view>
+  <view style="margin-button:120rpx;">
+  <block wx:for="{{product.productDetail.coverages}}">
+    <view class="page-section detail-first" style="display:flex; flex-direction:row;">
+      <view class="detail-ensure-title">
+        <view class="detail-desc">{{item.name}}</view>
+      </view>
+      <view class="detail-enure-price">{{item.value}}</view>
+    </view>
+  </block>
+</view>
+
+  <view class="detail-buy" style="display:flex; flex-direction:row;">
+    <view>
+      <button plain="true" class="detail-btn">价格:{{product.productDetail.premium}}元</button>
+    </view>
+    <view   >
+      <navigator url="../buy/index">
+      <button type="primary" class="detail-btn">购买</button>
+      </navigator>
+    </view>
+  </view>
+</view>

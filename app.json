@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/classify/index",
+    "pages/cart/index",
+    "pages/my/index",
+    "pages/details/index",
+    "pages/brand/index",
+    "pages/list/index",
+    "pages/detail/index",
+     "pages/buy/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "瑞恒产品",
+    "navigationBarBackgroundColor":"#AEEEEE",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#f9f027",
+    "borderStyle": "white",
+    "backgroundColor": "#292929",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/icon_normal.png",
+      "selectedIconPath": "images/icon_pressed.png",
+      "text": "主页"
+    }, {
+      "pagePath": "pages/classify/index",
+      "iconPath": "images/footer-icon-02.png",
+      "selectedIconPath": "images/footer-icon-02-active.png",
+      "text": "分类"
+    }, {
+      "pagePath": "pages/cart/index",
+      "iconPath": "images/footer-icon-03.png",
+      "selectedIconPath": "images/footer-icon-03-active.png",
+      "text": "理赔"
+    }, {
+      "pagePath": "pages/my/index",
+      "iconPath": "images/footer-icon-04.png",
+      "selectedIconPath": "images/footer-icon-04-active.png",
+      "text": "我的"
+    }]
+  },
+  "debug": true
+}

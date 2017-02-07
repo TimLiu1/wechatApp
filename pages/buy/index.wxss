@@ -1,0 +1,23 @@
+/* pages/buy/index.wxss */
+@import "../detail/common.wxss";
+.detail-middle-first {
+  width: 5px;
+  height: 26px;
+  border: 2px solid #0cf;
+  background-color: #0cf;
+}
+
+.detail-middle {
+  margin: 20rpx 20rpx;
+  font-size: 36rpx;
+  color: #0cf;
+  display: flex;
+}
+.detail-buy {
+  margin-top: 80rpx;
+  position: fixed;
+  bottom: 0;
+}
+.detail-btn {
+  width: 750rpx;
+}
