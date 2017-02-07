@@ -22,6 +22,11 @@ get post请求的封装
     
 <img src="http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/031b8ca2-b63d-44a8-a46b-d14e627298df.jpeg" width="320px" style="display:inline;">
 
+![2](http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/c731e731-c39f-4c85-a932-166cc4ff1d8b.jpeg)
+
+
+
+
 <img src="http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/c731e731-c39f-4c85-a932-166cc4ff1d8b.jpeg" width="320px" style="display:inline;">
 
 <img src="http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/e81cb551-8fcb-48c4-999a-d8f8296287c0.jpeg" width="320px" style="display:inline;">
