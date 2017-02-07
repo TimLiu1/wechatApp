@@ -15,6 +15,8 @@ get post请求的封装
 - utils — 存放服务层文件，主要实现和后端交互
 
 ### 项目截图:
+![2](http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/abc175eb-419f-456a-8e5d-c8398dfb0d4f.jpeg)
+
 
 <img src="http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/abc175eb-419f-456a-8e5d-c8398dfb0d4f.jpeg" width="320px" style="display:inline;">
     
