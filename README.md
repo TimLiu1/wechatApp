@@ -1,6 +1,6 @@
 # 微信小程序实现保险产品商城
 ### 项目说明：
-微信小程序：实现保险产品购买流程包裹一些
+微信小程序：实现保险产品购买流程包括一些
 ###### 常用到的效果
 日期选择、模态框、下拉框选择、数字输入框、字符串输入框
 ###### 还有方法的封装
@@ -26,6 +26,12 @@ get post请求的封装
 <img src="http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/e81cb551-8fcb-48c4-999a-d8f8296287c0.jpeg" width="320px" style="display:inline;">
 
 <img src="http://huibaoweb2.oss-cn-hangzhou.aliyuncs.com/opr/report/defbb859-720a-4115-b039-33d300a2332f.jpeg" width="320px" style="display:inline;">
+
+
+### 友情提示：
+如果是公司项目有小程序ID也希望不输入，因为输入之后就无法请求没有配置过的ip。
+也就是说无法请求外部数据。所以为了看到完整效果请不要输入appId
+
 
 
 ### 项目地址：
